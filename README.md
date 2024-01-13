@@ -15,13 +15,13 @@ Before you start, make sure you have Node.js and npm installed on your machine.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/TahirHNihal/
+git clone https://github.com/Learn-with-Sumit/assignment-2-book-finder-app-TahirHNihal.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd Book-Finder-App
+cd assignment-2-book-finder-app-TahirHNihal
 ```
 
 3. Install dependencies:
