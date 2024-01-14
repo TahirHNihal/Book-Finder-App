@@ -42,13 +42,8 @@ const BookCard = ({ books, onClickFav }) => {
               </button>
 
               <button
-                className={`flex min-w-[132px] items-center justify-center gap-1 rounded-md bg-${
-                  book.isFavorite ? "[#DC2954]/[14%]" : "[#1C4336]/[14%]"
-                } py-1.5 text-${
-                  book.isFavorite ? "[#DC2954]" : "[#1C4336]"
-                } transition-all hover:bg-${
-                  book.isFavorite ? "[#DC2954]/[24%]" : "[#1C4336]/[24%]"
-                } lg:py-1.5`}
+                className={`flex min-w-[132px] items-center justify-center gap-1 rounded-md 
+                bg-${book.isFavorite ? "[#dc295335]" : "[#1c433627]"} py-1.5 text-${book.isFavorite ? "[#DC2954]" : "[#1C4336]"} transition-all hover:bg-${book.isFavorite ? "[#dc2953a4]" : "[#1c433698]"} lg:py-1.5`}
                 onClick={() => onClickFav(book.id)}
               >
                 {book.isFavorite ? (
