@@ -41,18 +41,20 @@ const BookCard = ({ books, onClickFav }) => {
                 Add to Cart
               </button>
 
-              <button
-                className={`flex min-w-[132px] items-center justify-center gap-1 rounded-md 
-                bg-${book.isFavorite ? "[#dc295335]" : "[#1c433627]"} py-1.5 text-${book.isFavorite ? "[#DC2954]" : "[#1C4336]"} transition-all hover:bg-${book.isFavorite ? "[#dc2953a4]" : "[#1c433698]"} lg:py-1.5`}
-                onClick={() => onClickFav(book.id)}
-              >
+              <button className="flex" onClick={() => onClickFav(book.id)}>
                 {book.isFavorite ? (
-                  <IoHeartSharp className=" text-[18px] text-[#DC2954]" />
+                  <span className="flex min-w-[132px] items-center justify-center gap-1 rounded-md bg-[#DC2954]/[14%] py-1.5 text-[#DC2954] transition-all hover:bg-[#DC2954]/[24%] lg:py-1.5">
+                    <IoHeartSharp className=" text-[18px] text-[#DC2954]" />
+                    Favorite
+                  </span>
                 ) : (
-                  <IoHeartOutline className=" text-[18px] text-[#1C4336]"/>
+                  <span className="flex min-w-[132px] items-center justify-center gap-1 rounded-md bg-[#1C4336]/[14%] py-1.5 text-[#1C4336] transition-all hover:bg-[#1C4336]/[24%] lg:py-1.5">
+                    <IoHeartOutline className=" text-[18px] text-[#1C4336]" />
+                    Favorite
+                  </span>
                 )}
-                Favorite
               </button>
+              
             </div>
           </div>
         </div>
