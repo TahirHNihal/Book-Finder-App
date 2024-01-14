@@ -52,9 +52,9 @@ const BookCard = ({ books, onClickFav }) => {
                 onClick={() => onClickFav(book.id)}
               >
                 {book.isFavorite ? (
-                  <IoHeartSharp className=" text-[18px]" />
+                  <IoHeartSharp className=" text-[18px] text-[#DC2954]" />
                 ) : (
-                  <IoHeartOutline className=" text-[18px]" />
+                  <IoHeartOutline className=" text-[18px] text-[#1C4336]"/>
                 )}
                 Favorite
               </button>
